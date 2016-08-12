@@ -4,4 +4,7 @@ node {
 	
 	stage 'Build'
 	sh "mvn clean package"
+	
+	stage 'Static Code Analisys'
+	sh "mvn sonar:sonar"
 }
