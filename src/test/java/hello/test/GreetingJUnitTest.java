@@ -45,7 +45,7 @@ public class GreetingJUnitTest {
     public void testGreeting() {
         Greeting greeting = new Greeting(1, "Hello world!");
 
-        assertEquals("Greeting content must be Hello world", "Hello world", greeting.getContent());
+        assertEquals("Greeting content must be Hello world", "Hello world!", greeting.getContent());
         assertEquals("Greeting id must be 1", 1, greeting.getId());
     }
 }
